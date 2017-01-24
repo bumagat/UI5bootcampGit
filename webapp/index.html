@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="UTF-8">
+
+		<title>Webapp</title>
+
+		<script id="sap-ui-bootstrap"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_bluecrystal"
+			data-sap-ui-compatVersion="edge"
+			data-sap-ui-resourceroots='{"sap.ui.bootcamp": "./"}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				sap.ui.xmlview({
+					viewName: "sap.ui.bootcamp.view.App"
+				}).placeAt("content");
+				
+				// new sap.m.Text({
+				// 	text: "Hello World"
+				// }).placeAt("content");
+				// new sap.m.Input({
+				// 	type: "Text"
+				// 	/*width: "20%"*/
+				// }).placeAt("content");
+				// new sap.m.Text({
+				// 	text: "Password"
+				// }).placeAt("content");
+				// new sap.m.Input({
+				// 	type: "Password"
+				// }).placeAt("content");
+				// new sap.m.Button({
+				// 	text: "Login"
+				// }).placeAt("content");
+				// new sap.m.Shell({
+				// 	app: new sap.ui.core.ComponentContainer({
+				// 		height : "100%",
+				// 		name : "sap.ui.bootcamp"
+				// 	})
+				// }).placeAt("content");
+			});
+		</script>
+	</head>
+
+	<body class="sapUiBody" id="content">
+		<!--<p>Hello World!</p>-->
+	</body>
+
+</html>
